@@ -1,0 +1,37 @@
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.warp-container {
+  margin-top: 100px;
+}
+
+[class^="col-"] {
+  float: left;
+  padding: 40px;
+  background: red;
+  border: 1px solid #000;
+  text-align: center;
+  background-image: url(http://33.media.tumblr.com/2078c54d5e1f2f6d6be277ff81ce4112/tumblr_nm5n2vSdAe1s4fz4bo1_500.gif);
+  background-size: 100%;
+}
+
+.col-1 {
+  width: calc( 100% / 12);
+}
+
+.col-2 {
+  width: calc(( 100% / 12) * 2);
+}
+
+.col-3 {
+  width: calc(( 100% / 12) * 4);
+}
